@@ -104,9 +104,9 @@ delete user.age //will delete the key "age" from user object.
  *
  */ 
 
-let x = 100;
-let y = x; 
-let y = 10;
+var x = 100;
+var y = x; 
+var y = 10;
  
  /* //=> here, y is a COPY of x; once y is reassigned, it has no effect on x. This occurs with PRIMITIVE VALUES.
  * 
@@ -114,7 +114,7 @@ let y = 10;
  */ 
  let x = {};
  let y = x;
- let y = {firstName: 'Iggy', lastName: 'Pop};
- 
+ x = {firstName: 'Iggy', lastName: 'Pop}
+
  /** //=> here, both x and y REFERENCE the same object. Thus, when y is mutated, x "refers" to the same object, so x's 
   // values are also mutated in the exact same fashion.
